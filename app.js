@@ -1,0 +1,1 @@
+const gener= document.querySelector('gener');
