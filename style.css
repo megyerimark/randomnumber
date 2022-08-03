@@ -20,7 +20,8 @@ html,body{
 }
 
 .text{
-    color: red;
+    border-radius: 25%;
+    color: rgb(158, 201, 42);
     font-weight: 600px;
     font-size: 26px;
     line-height: 36px;
@@ -32,6 +33,12 @@ html,body{
         background: white;
         padding: 20px;
     }
+    .display input{
+        border-radius: 5px;
+        font-size: 12px;
+        
+    }
+
     .text{
      
        
@@ -45,4 +52,70 @@ html,body{
 .display{
     height: 55px;
     width: 100%;
+    display: flex;
+    position: relative;
+    overflow:hidden;
+}
+.display input{
+    border-radius: 16px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: rgb(174, 192, 250);
+    color: blue;
+    padding: 10px;
+    font-size: 18px;
+    pointer-events: none;
+    user-select: none;
+    position: relative;
+}
+.display input::placeholder{
+    text-align: center;
+    color: blueviolet;
+}
+
+
+.display span {
+    position:absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color:blue ;
+    z-index: 9;
+    cursor: pointer;
+
+}
+.input-data button{
+    height: 55px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background:#0062ff ;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all  0.3s ease;
+}
+
+.input-data input:hover{
+    background: rgb(87, 87, 179);
+}
+@media screen and (max-width:768px){
+    
+    .container{
+        width: 400px;
+        background: white;
+        padding: 20px;
+    }
+    .display input{
+        border-radius: 5px;
+        font-size: 15px;
+        
+    }
 }
